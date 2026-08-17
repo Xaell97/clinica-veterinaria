@@ -18,10 +18,10 @@ class UserSeeder extends Seeder
                 'email' => 'admin@clinica.test'
             ],
             [
-                'name'      => 'Adiministrador',
+                'name'      => 'Administrador',
                 'password'  => '12345678',
                 'role'      => 'admin',
-                'status'    => true,
+                'status'    =>  true,
             ]
         );
 
@@ -33,7 +33,7 @@ class UserSeeder extends Seeder
                 'name'      => 'Dr. Carlos',
                 'password'  => '12345678',
                 'role'      => 'veterinario',
-                'status'    => true,
+                'status'    =>  true,
             ]
         );
 
@@ -45,7 +45,7 @@ class UserSeeder extends Seeder
                 'name'      => 'Maria',
                 'password'  => '12345678',
                 'role'      => 'recepcionista',
-                'status'    => true,
+                'status'    =>  true,
             ]
         );
     }
