@@ -3,62 +3,12 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-<<<<<<< HEAD
-=======
 use App\Models\Tutor;
 use App\Http\Requests\TutorRequest;
->>>>>>> 667e956e1cfa6c459ba0f8d7b0c346247c67b0ae
 
 class TutorController extends Controller
 {
     /**
-<<<<<<< HEAD
-     * Display a listing of the resource.
-     */
-    public function index()
-    {
-        //
-    }
-
-    /**
-     * Show the form for creating a new resource.
-     */
-    public function create()
-    {
-        //
-    }
-
-    /**
-     * Store a newly created resource in storage.
-     */
-    public function store(Request $request)
-    {
-        //
-    }
-
-    /**
-     * Display the specified resource.
-     */
-    public function show(string $id)
-    {
-        //
-    }
-
-    /**
-     * Show the form for editing the specified resource.
-     */
-    public function edit(string $id)
-    {
-        //
-    }
-
-    /**
-     * Update the specified resource in storage.
-     */
-    public function update(Request $request, string $id)
-    {
-        //
-=======
      *  Lista os tutores com paginação e barra de pesquisa
      */
     public function index(Request $request)
@@ -123,17 +73,11 @@ class TutorController extends Controller
         return redirect()
             ->route('tutors.index')
             ->with('success', 'Tutor atualizado com sucesso!');
->>>>>>> 667e956e1cfa6c459ba0f8d7b0c346247c67b0ae
     }
 
     /**
      * Remove the specified resource from storage.
      */
-<<<<<<< HEAD
-    public function destroy(string $id)
-    {
-        //
-=======
     public function destroy(Tutor $tutor)
     {
         $tutor->delete();
@@ -141,6 +85,5 @@ class TutorController extends Controller
         return redirect()
             ->route('tutors.index')
             ->with('success', 'Tutor excluído com sucesso!');
->>>>>>> 667e956e1cfa6c459ba0f8d7b0c346247c67b0ae
     }
 }
