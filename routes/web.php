@@ -33,6 +33,8 @@ Route::middleware(['auth', 'user.active'])->group(function () {
         ]);
     });
 
+    Route::resource('servicos', ServicoController::class);
+
     Route::resource('tutors', TutorController::class);
    
 });
